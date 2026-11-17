@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "happypod": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/dist/stdio.js"],
+      "env": {
+        "HAPPYPOD_API_KEY": "${HAPPYPOD_API_KEY:-}",
+        "HAPPYPOD_MODE": "${HAPPYPOD_MODE:-}"
+      }
+    }
+  }
+}

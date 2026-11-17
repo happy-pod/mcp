@@ -1,0 +1,61 @@
+{
+  "name": "happypod-mcp",
+  "mcpName": "io.github.happy-pod/happypod",
+  "version": "0.1.0",
+  "description": "MCP server for Happy Pod, the DevOps AI agent for vibe coders: ship, scale, watch and fix apps, GPU pods and databases from Claude Code, Codex, Cursor and other AI tools.",
+  "type": "module",
+  "bin": {
+    "happypod-mcp": "dist/stdio.js"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "skills",
+    ".claude-plugin",
+    ".mcp.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "esbuild src/stdio.ts --bundle --platform=node --format=esm --target=node20 --outfile=dist/stdio.js --banner:js=\"import { createRequire as __cr } from 'module'; const require = __cr(import.meta.url);\" && chmod +x dist/stdio.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "start": "node dist/stdio.js",
+    "build:lib": "tsc -p tsconfig.build.json"
+  },
+  "keywords": [
+    "mcp",
+    "happypod",
+    "model-context-protocol",
+    "claude",
+    "codex",
+    "cursor",
+    "devops",
+    "deploy",
+    "vibe-coding"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "typescript": "5.9.3",
+    "vitest": "3.2.4",
+    "esbuild": "0.25.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/happy-pod/mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/happy-pod/mcp/issues"
+  },
+  "homepage": "https://happypod.io"
+}

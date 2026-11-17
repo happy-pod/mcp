@@ -1,0 +1,8 @@
+{
+  "name": "happypod",
+  "description": "Happy Pod tools for AI coding agents: ship, scale, watch and fix apps, GPU pods and databases.",
+  "owner": { "name": "Happy Pod", "url": "https://happypod.io" },
+  "plugins": [
+    { "name": "happypod", "source": "./", "description": "Happy Pod MCP server and skills." }
+  ]
+}
