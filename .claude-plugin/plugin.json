@@ -1,0 +1,10 @@
+{
+  "name": "happypod",
+  "version": "0.1.0",
+  "description": "Happy Pod, the DevOps AI Agent for Vibe Coders: ship, scale, watch and fix apps, GPU pods and databases from Claude.",
+  "author": { "name": "Happy Pod", "url": "https://happypod.io" },
+  "homepage": "https://happypod.io",
+  "repository": "https://github.com/happy-pod/mcp",
+  "license": "MIT",
+  "keywords": ["happypod", "devops", "deploy", "gpu", "postgres", "vibe-coding"]
+}
